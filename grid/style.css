@@ -1,31 +1,64 @@
 @charset "UTF_8";
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+    
+}
+.titulo{
+    grid-column: 2;
+    text-align: right;
+}
+.preco{
+    place-self: start end;
+}
+.comprar{
+    align-self: start;
+    text-align: center;
+}
+p{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+/*config padrão*/
 body{
     font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
+    margin: 40px;
 }
-.item{
-    background-color: rgb(189, 186, 186);
-    border: 1px solid black;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 4px;
+h1,p{
+    margin: 0px;
 }
-a{
+h1{
+    font-size: 48px;
+    line-height: 1;
+}
+p,span{
+    font-size: 20px;
+}
+.comprar{
     color:white;
     padding: 10px 20px;
     background-color: blue;
     border-radius: 4px;
     text-decoration: none;
+    font-size: 20px;
 }
-h1{
-    text-align: center;
+.preco{
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
-.corpo{
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    justify-content: center;
-    gap: 10px 20px;
+img{
+    max-width: 100%;
+    border-radius: 4px;
 }
-a{
-text-align: center;
-}
+
