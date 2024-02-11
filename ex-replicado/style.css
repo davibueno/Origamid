@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e7e7e7;
+    display: grid;
+    justify-content: center;
+}
+h1, h2 , h3, p{
+    margin: 0;
+}
+/*cabeça do site */
+img{
+    display: block;
+    max-width: 100%;
+}
+.menu{
+    display: grid;
+    justify-items: center;
+     padding: 40px;
+     margin: 60px;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+  
+    gap: 60px;
+    margin-top: 60px;
+}
+nav > a{
+    background-color: #fff;
+    color: #000;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    border: 1px solid #fff;
+}
+nav > a:hover{
+    border-color: red;
+}
+/*corpo do site */
+.conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+}
+h1{
+    font-size: 2rem;
+}
+p{
+    font-size:1.2rem 
+}
+.botao{
+    background: #e21;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.introducao{
+background: #fff;
+padding: 40px;
+display: grid;
+text-align: right;
+justify-items: end;
+align-items: center;
+}
+.subtitulo{
+    font-size:4rem;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.2);
+    background-image:url(img/onda.svg) ;
+}
+
