@@ -34,7 +34,9 @@ header{
 
 .navegacao{
     display:flex;
-    gap: 20px; 
+    flex-wrap: wrap;
+    gap: 60px; 
+    justify-content: center;
 }
 
 
@@ -57,6 +59,10 @@ li a:hover{
     grid-template-columns: 1fr 1fr;
     max-width: 1000px;
     
+}
+.introducao-cover img{
+    height: 100%;
+    object-fit: cover;
 }
 .fase{
     background: #fff;
@@ -102,6 +108,7 @@ li a:hover{
     text-align: right;
     padding: 40px;
     align-self: center;
+    /*word-break: break-all;*/
  }
  
 
@@ -139,5 +146,35 @@ footer{
 footer p{
     font-weight: bold;
     font-size:1rem;
+}
+@media (max-width: 1000px){
+    .conteudo-vantagens{
+        grid-template-columns: 1fr ;
+}
+.subtitulo{
+    text-align: center;
+}
+}
+@media (max-width:600px){
+    .fase{
+        text-align: left;
+        justify-items: start;
+    }
+    header{
+        gap: 30px;
+    }
+    .navegacao{
+        margin-top:20px ;
+        gap: 30px;
+    }
+    .conteudo{
+        grid-template-columns: 1fr;
+    }
+    .fase::before{
+        display: none;
+    }
+    .subtitulo{
+        font-size: 3rem;
+    }
 }
 
