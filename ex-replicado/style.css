@@ -1,4 +1,11 @@
 @charset "UTF8";
+:root{
+    --cor-primaria:#e21;
+    --cor-primaria-escura:#900;
+    --fundo-1:#f7f7f7;
+    --fundo-2:#ffff;
+}
+
 body{
    
     margin: 0px;
@@ -52,7 +59,7 @@ li a{
     flex-wrap: wrap;
 }
 li a:hover{
-    border-color: #e21 ;
+    border-color: var(--cor-primaria) ;
 }
 .conteudo{
     display: grid;
@@ -79,7 +86,7 @@ li a:hover{
     content: "";
     width:60px;
     height: 4px;
-    background: #e21;
+    background: var(--cor-primaria);
     position: absolute;
     top: 30px;
     right: -30px;
@@ -91,14 +98,14 @@ li a:hover{
     font-size: 2rem
 }
 .botao{
-    background: #e21;
+    background: var(--cor-primaria);
     color: white;
     text-transform: uppercase;
     padding: 1rem 2rem;
     border-radius: 4px;
 }
 .botao:hover{
-    background: #921;
+    background:var(--cor-primaria-escura);
 }
 .subtitulo{
     text-transform: uppercase;
@@ -131,7 +138,7 @@ li a:hover{
     
 }
 .itens:hover{
-    border-color: #e21;
+    border-color: var(--cor-primaria);
 }
 .lista li:nth-child(odd){
         background: #e7e7e7;
