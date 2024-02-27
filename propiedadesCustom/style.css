@@ -1,0 +1,7 @@
+:root{
+    --roxo:#84e;
+}
+
+h1{
+    color: var(--roxo);
+}
